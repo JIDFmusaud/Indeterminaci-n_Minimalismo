@@ -1,6 +1,2 @@
-/admin/*    200!
-Basic-Auth=jose:mi_contrasena
-/assents/* 200
-/css/*     200
-7js/*      200
-/images/*  200
+/*/
+index,html   200
