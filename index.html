@@ -1,43 +1,27 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="icon" href="img/logo.ico">
-	<link rel="stylesheet" type="text/css" href="minimalEst.css">
-	<link rel="stylesheet" type="text/css" href="normalize.css">
-	<link rel="preconnect" href="fonts/Acme-Regular.ttf">
-	<link rel="preconnect" href="fonts/lobster/Lobster-Regular.ttf">
-	<title>INDETERMINISMO</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="minimalEst.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <title>INDETERMINISMO</title>
 </head>
-    <body>
-        
-        <div class="cont">
-                <div class="encabezado">
-                    <h1>MUSICA DE SIGLO XX</h1>
-                </div>
-
-
-              
-
-                <button id="login-button">Iniciar Sesión</button>
-
-                <!-- Botón para cerrar sesión -->
-                <button id="logout-button" style="display:none;">Cerrar Sesión</button>
-            
-                <!-- Área para mostrar información del usuario -->
-                <div id="user-info"></div>
-            
-                <!-- Vinculamos el archivo app.js -->
-                <script src="app.js" type="module" defer></script>
-               
-                
+<body>
+    <div class="cont">
+        <div class="encabezado">
+            <h1>MUSICA DE SIGLO XX</h1>
         </div>
 
-            
-            
+        <button id="login-button">Iniciar Sesión</button>
+        <button id="logout-button" style="display:none;">Cerrar Sesión</button>
+        <div id="user-info"></div>
 
-
-    </body>
-
+        <!-- Incluye Auth0 desde un CDN -->
+        <script src="https://cdn.auth0.com/js/auth0-spa-js/2.1.3/auth0-spa.min.js"></script>
+        
+        <!-- Vincula tu archivo app.js -->
+        <script src="app.js" type="module" defer></script>
+    </div>
+</body>
 </html>
