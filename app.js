@@ -4,9 +4,9 @@ let auth0Client;
 
 const initAuth0 = async () => {
     auth0Client = await createAuth0Client({
-        domain: 'TU_DOMINIO.auth0.com', // Reemplaza con tu dominio de Auth0
-        client_id: 'TU_CLIENT_ID',       // Reemplaza con tu client ID de Auth0
-        redirect_uri: window.location.origin // URL donde redirigir después del login
+        domain: 'https://dev-b4clseumhkg1tdd3.us.auth0.com', // Reemplaza con tu dominio de Auth0
+        client_id: 'noxrIEup1Kx62gRSnT6o4j9LniCUhzB7',       // Reemplaza con tu client ID de Auth0
+        redirect_uri: "https://musicasxx.netlify.app/minimalismo" // URL donde redirigir después del login
     });
 };
 
@@ -19,7 +19,7 @@ const login = async () => {
 
 const logout = () => {
     auth0Client.logout({
-        returnTo: window.location.origin // URL donde redirigir después del logout
+        returnTo: "https://www.google.co.uk/"// URL donde redirigir después del logout
     });
 };
 
@@ -33,6 +33,25 @@ window.onload = async () => {
     if (isAuthenticated) {
         const user = await auth0Client.getUser();
         document.getElementById('user-info').innerText = `Bienvenido, ${user.name}`;
+    } else {
+        await auth0Client.handleRedirectCallback();
+    }
+};
+
+
+
+
+
+window.onload = async () => {
+    const isAuthenticated = await auth0Client.isAuthenticated();
+
+    if (isAuthenticated) {
+        const user = await auth0Client.getUser();
+        document.getElementById('user-info').innerText = `Bienvenido, ${user.name}`;
+        
+        // Ocultar el botón de inicio de sesión y mostrar el de cerrar sesión
+        document.getElementById('login-button').style.display = 'none';
+        document.getElementById('logout-button').style.display = 'block';
     } else {
         await auth0Client.handleRedirectCallback();
     }
