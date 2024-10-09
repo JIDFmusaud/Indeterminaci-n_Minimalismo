@@ -18,7 +18,7 @@ body{
 
 a {
     text-decoration: none;
-    color: darkolivegreen;
+    color: rgb(49, 60, 29);
     font-size: 1.5em;
     margin-left: 1em;
 }
@@ -64,6 +64,13 @@ display: block;
     align-items: center;
 
 }
+h4{
+    margin: auto;
+    text-align: center;
+    font-size: 1.8em;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color:rgb(33, 62, 63) ;
+}
 
 .apunte{
     display: block;
@@ -72,26 +79,28 @@ display: block;
 }
 .boton {
     display:flex;
-    width: 9em;
+    width: 5em;
     height: auto;
-    background-color: cornflowerblue;
+    background-color: rgb(180, 185, 195);
     padding: 0.3em;
-    margin: auto;
+    margin-top: 2em;
+    margin-left: 2em;
   
     border: 1px solid black;
     border-radius: 1em;
     align-content: center;
     box-shadow: 10px 10px 8px grey;
+    justify-content: center;
 
 }
 
 .boton:hover{
     display:flex;
-    width: 9em;
+    width: 4em;
     height: auto;
-    background-color: cornflowerblue;
+    background-color: rgb(150, 159, 176);
     padding: 0.3em;
-    margin: auto;
+ 
   
     border: 1px solid black;
     border-radius: 1em;
@@ -122,4 +131,39 @@ display: block;
         width: 99%;
     }
 
+}
+
+.pass{
+    display: flex;
+    margin-top:1em;
+    margin-left: 0.5em;
+    justify-content: center;
+
+}
+input{
+    height: 2em;
+    width: 20em;
+}
+#login-button{
+    background-color: rgb(119, 203, 161);
+}
+#error-message{
+    margin: 0.5em;
+}
+.bienvenida{
+    margin: 0.5em;
+    
+}
+.bienvenida p{ color: rgb(22, 110, 81);
+    font-size: 1.3em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+menu{
+    background-color: rgb(148, 153, 158);
+    opacity: 0.5;
+    padding: 0.5em;
+}
+menu a{
+    font-family:Georgia, 'Times New Roman', Times, serif
 }
