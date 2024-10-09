@@ -7,7 +7,7 @@ const initAuth0 = async () => {
     auth0Client = await createAuth0Client({
         domain: 'dev-b4clseumhkg1tdd3.us.auth0.com', // Corregido: quitar https://
         client_id: 'noxrIEup1Kx62gRSnT6o4j9LniCUhzB7',
-        redirect_uri: "https://musicasxx.netlify.app/indeterminismo" // URL correcta
+        redirect_uri: 'https://musicasxx.netlify.app/indeterminismo' // URL correcta
     });
 };
 
@@ -22,7 +22,7 @@ const login = async () => {
 // Función de logout
 const logout = () => {
     auth0Client.logout({
-        returnTo: "https://musicasxx.netlify.app/" // URL de retorno después del logout
+        returnTo: 'https://musicasxx.netlify.app/' // URL de retorno después del logout
     });
 };
 
