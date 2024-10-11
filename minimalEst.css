@@ -4,28 +4,54 @@ body{
     width: 100%;
     height: auto;
     margin: auto;
+}
+
+.general{
+    display: block;
+    background-color: rgb(222, 216, 188);
+    width: 60%;
+    margin: auto;
+    padding-bottom: 2em;
 
 
 }
-.cont{
+.cont1{
     display: block;
-    width: 80%;
+    width: 100%;
     height: auto;
-    padding-bottom: 1em;    
-    background-color: rgb(222, 216, 188);
+   
+
     margin: auto;
+}
+.cont2{
+    display: block;
+    width: 100%;
+    height: auto;
+
+ 
 }
 
 a {
+    display: inline-block;
     text-decoration: none;
-    color: rgb(49, 60, 29);
+    color: rgb(70, 36, 4);
     font-size: 1.5em;
-    margin-left: 1em;
+    text-shadow: 10px 8px 4px grey;
+    
+   
+}
+a p{
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    font-size: 1em;   
 }
 
 a:hover{
-    color: rgb(51, 47, 107);
+    color: rgb(0, 0, 0);
     transition: 0.7s;
+    font-size: 1.4em;
+    text-shadow: 8px 6px 2px grey;
+    transition: 0.4s; 
 }
 
 .encabezado{
@@ -65,9 +91,14 @@ display: block;
 
 }
 h4{
-    margin: auto;
+    display: block;
+   
+   
     text-align: center;
-    font-size: 1.8em;
+    padding: 0.2em;
+    
+   
+    font-size: 2em;
     font-family:Georgia, 'Times New Roman', Times, serif;
     color:rgb(33, 62, 63) ;
 }
@@ -126,9 +157,12 @@ h4{
     h3{
         font-size: 1.3em;
     }
-    .cont{
+    .general{
     
         width: 99%;
+    }
+    h4{
+        font-size: 1.5em;
     }
 
 }
@@ -160,10 +194,17 @@ input{
 
 }
 menu{
-    background-color: rgb(148, 153, 158);
+    background-color: rgb(93, 174, 255);
     opacity: 0.5;
     padding: 0.5em;
 }
 menu a{
     font-family:Georgia, 'Times New Roman', Times, serif
+}
+button{
+    background-color: rgb(255, 113, 113);
+    margin: auto;
+    width: 5em;
+    height: 3em;
+    margin-left:4.5em ;
 }
