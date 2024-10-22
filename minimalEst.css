@@ -51,6 +51,15 @@ a {
     
    
 }
+.comoap{
+    display: inline-block;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    font-size: 1em; 
+    text-shadow: 10px 8px 4px grey; 
+    color: rgb(70, 36, 4); 
+
+}
 a p{
     margin-left: 0.5em;
     margin-right: 0.5em;
@@ -193,11 +202,47 @@ h4{
         margin: auto;
         width: 23em;
         height: auto;
-        
-    }
-
-
 }
+}
+
+table {
+    width: 98%;
+    table-layout: fixed; /* Asegura que la tabla se ajuste dentro de su contenedor */
+    box-sizing: border-box;
+    margin: auto;
+  }
+  
+  td {
+    word-wrap: break-word;
+    padding: 10px; /* Añade algo de espacio dentro de las celdas */
+  }
+  
+  @media screen and (max-width: 600px) {
+    td {
+      font-size: 12px; /* Reduce el tamaño de la fuente en pantallas pequeñas */
+    }
+  }
+
+  #tonica-formada {
+    cursor: pointer;
+    
+  }
+
+  #Complejo-Impulsivo{
+    cursor: pointer;
+  }
+
+  #Tonico-Iterado{
+    cursor: pointer;
+  }
+
+  #Complejo-Formado{
+    cursor: pointer;
+  }
+
+ #Variado-Formado{
+    cursor: pointer;
+  }
 
 .pass{
     display: flex;

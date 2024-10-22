@@ -8,7 +8,7 @@
         <link rel="stylesheet" type="text/css" href="normalize.css">
         <link rel="preconnect" href="fonts/Acme-Regular.ttf">
         <link rel="preconnect" href="fonts/lobster/Lobster-Regular.ttf">
-        <title>MINIMALISMO</title>
+        <title>MÚSICA DE SIGLO XX</title>
     </head>
 
     <body>
@@ -55,7 +55,7 @@
 
                 <div class="subtemas"><p>MÚSICA CON PROCESOS EN TIEMPO REAL</p></div>
                 <h2>Del Fabbro, José I.</h2>
-                <a href="audios/O.F.ofTheG.P..mp3"><p>- One Fase of the Glurick Planet.</p></a> 
+                <div class="comoap"><p>- One fase of the Glurick Planet.</p></div> 
                 <audio src="audios/O.F.ofTheG.P..mp3" controls><a href="audios/O.F.ofTheG.P..mp3"><p>- One Fase of the Glurick Planet.</p></a></audio>
                 <a href="pdf/ofofthegp.pdf" target="_blank"><p>Ver Partitura</p></a>
 
@@ -84,12 +84,89 @@
     <li><strong>Factura iterada:</strong> (Los sonidos iterados son una mezcla de los dos anteriores, son micro impulsos incontables que hacen una envolvente global formada, como por ejemplo, el sonido de los dientes del peine al pasar el dedo o la letra R)</li><audio src="audios/iterado.mp3" controls></audio>
 </ul>
 
-                    <p>Veamos un cuadro de doble entrada donde se puede convinar la masa y la factura, si un sonido comparte algún tipo de masa o algún tipo de factura, ellos tienen un parentesco y son más afines al momento de realizar una construcción sonora.</p>
+                    <p>Veamos un cuadro interactivo de doble entrada donde se puede convinar la masa y la factura, si un sonido comparte alguna de estas dos cualidades, masa o factura, entonces ellos tienen un parentesco y son más afines al momento de realizar una construcción sonora.</p>
 
 
-                  <img src="img/Cuadro.jpg" alt="factura y masa">
 
-                  <br>
+                    <table cellspacing="0" border="0">
+                        <colgroup></colgroup>
+<colgroup></colgroup>
+<colgroup span="3"></colgroup>
+                        <tr>
+                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" colspan=2 rowspan=2 height="127" align="center" valign=middle bgcolor="#000000"><br></td>
+                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" colspan=3 align="center" valign=middle bgcolor="#B4C7DC"><b><font size=6 color="#3465A4">FACTURA</font></b></td>
+                            </tr>
+                        <tr>
+                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle bgcolor="#5983B0"><font size=5>Formada</font></td>
+                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle bgcolor="#5983B0"><font size=5>Impulsiva</font></td>
+                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle bgcolor="#5983B0"><font size=5>Iterada</font></td>
+                        </tr>
+                        <tr>
+                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" rowspan=3 height="191" align="center" valign=middle bgcolor="#AFD095"><font size=6 color="#FF0000">MASA</font></td>
+                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle bgcolor="#77BC65"><font size=5>Tónica</font></td>
+                            <td id="tonica-formada" style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle bgcolor="#CCCCCC"><font size=4 color="#000000">Tónico/Formado</font></td>
+                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle bgcolor="#CCCCCC"><font size=4 color="#000000">Tónico/Impulsivo</font></td>
+                            <td id="Tonico-Iterado"style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle bgcolor="#CCCCCC"><font size=4 color="#000000">Tónico/Iterado</font></td>
+                        </tr>
+                        <tr>
+                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle bgcolor="#77BC65"><font size=5>Compleja </font></td>
+                            <td id="Complejo-Formado" style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle bgcolor="#CCCCCC"><font size=4 color="#000000">Complejo/Formado</font></td>
+                            <td id="Complejo-Impulsivo" style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle bgcolor="#CCCCCC"><font size=4 color="#000000">Complejo/Impulsivo</font></td>
+                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle bgcolor="#CCCCCC"><font size=4 color="#000000">Complejo/Iterado</font></td>
+                        </tr>
+                        <tr>
+                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle bgcolor="#77BC65"><font size=5>Variada</font></td>
+                            <td id="Variado-Formado" style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle bgcolor="#CCCCCC"><font size=4 color="#000000">Variado/formado</font></td>
+                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle bgcolor="#CCCCCC"><font size=4 color="#000000">Variado/Impulsivo</font></td>
+                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle bgcolor="#CCCCCC"><font size=4 color="#000000">Variado/Iterado</font></td>
+                        </tr>
+                    </table>
+
+
+                    <audio id="audio" src="audios/Tónica.mp3"></audio>
+                    <audio id="audio2" src="audios/Impulso.mp3"></audio>
+                    <audio id="audio3" src="audios/iterado.mp3"></audio>
+                    <audio id="audio4" src="audios/ruidoBlanco.mp3"></audio>
+                    <audio id="audio5" src="audios/variado.mp3"></audio>
+                    <br>
+                    <br>
+                    <script>
+                        document.getElementById('tonica-formada').addEventListener('click', function() {
+                          var audio = document.getElementById('audio');
+                          audio.play();
+                        });
+                      </script>
+
+                      <script>
+                        document.getElementById('Complejo-Impulsivo').addEventListener('click', function() {
+                          var audio = document.getElementById('audio2');
+                          audio.play();
+                        });
+                      </script>
+
+                      <script>
+                        document.getElementById('Tonico-Iterado').addEventListener('click', function() {
+                          var audio = document.getElementById('audio3');
+                          audio.play();
+                        });
+                      </script>
+
+                      <script>
+                        document.getElementById('Complejo-Formado').addEventListener('click', function() {
+                          var audio = document.getElementById('audio4');
+                          audio.play();
+                        });
+                      </script>
+                      
+                      <script>
+                        document.getElementById('Variado-Formado').addEventListener('click', function() {
+                          var audio = document.getElementById('audio5');
+                          audio.play();
+                        });
+                      </script>
+               
+
+            
 
               
                 <a href="index.html"><button>Salir</button></a>
