@@ -244,6 +244,22 @@ table {
     cursor: pointer;
   }
 
+  #tonica-impulsiva{
+    cursor: pointer;
+  }
+
+  #Impulsivo-Variado{
+    cursor: pointer;
+  }
+
+  #Iterado-Variado{
+    cursor: pointer;
+  }
+
+  #Iterado-Complejo{
+    cursor: pointer;
+  }
+
 .pass{
     display: flex;
     margin-top:1em;
